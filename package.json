@@ -1,0 +1,29 @@
+{
+  "name": "heom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullcalendar/core": "^5.4.0",
+    "@fullcalendar/daygrid": "^5.4.0",
+    "@fullcalendar/react": "^5.4.0",
+    "css-loader": "^5.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fullcalendar": "^5.4.0",
+    "mongodb-memory-server": "^6.9.2",
+    "mongoose": "^5.11.7",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-42": "^1.2.6",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0"
+  }
+}
