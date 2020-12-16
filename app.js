@@ -6,25 +6,6 @@ const { MongoMemoryServer } = require("mongodb-memory-server");
 var express = require("express");
 var app = express();
 
-//database
-
-const uri = 'mongodb://localhost/test'
-
-const mongooseOpts = {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    };
-
-    mongoose.connect(uri, mongooseOpts);
- 
-//const mongod = new MongoMemoryServer();
- // .getUri()
-//  .then((uri) => {
-// })
-//  .catch((err) => {
-//    console.error(err);
-//  });
-
 //session
 const session = require("express-session"); // 세션 설정
 app.use(
@@ -78,7 +59,7 @@ app.get(
   passport.authenticate("42", { failureRedirect: "/login" }),
   function (req, res) {
     // Successful authentication, redirect home.
-    res.redirect("/");
+    res.redirect("http://localhost:3000/mypage/");
   }
 );
 
@@ -93,6 +74,11 @@ app.get("/route", function (req, res) {
 
 app.get("/login", function (req, res) {
   res.send("<h1>Login please</h1>");
+});
+
+app.get("/logout", function (req, res) {
+  req.logout();
+  res.redirect("/");
 });
 
 app.post("/current-user", function (req, res) {

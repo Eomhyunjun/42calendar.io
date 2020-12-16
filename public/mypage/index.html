@@ -13,7 +13,7 @@
           if (!response.data) {
             text = "아직 로그인되지 않았습니다.";
           } else {
-            text = response.data.id;
+            text = response.data.username;
           }
 
           document.getElementById("user-id").innerHTML = text;
@@ -28,6 +28,7 @@
     <h2>마이페이지</h2>
     <div>
       <span id="user-id"></span>
+      <a href="http://localhost:3000/logout">로그아웃하기</a>
     </div>
   </body>
 </html>
