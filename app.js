@@ -37,10 +37,10 @@ passport.use(
   new FortyTwoStrategy(
     {
       clientID:
-        "e5ce9ce6c45e0312d204f99eb9c2cefd82a394bf654fa5188a54057b24c7f572",
+        "e44ba26db33e0c5a42c18b3876b0c6b2d606be376bf54b4cca30b367854938d6",
       clientSecret:
-        "2bf68eb676ed56eb8559806f4b2424b91e2e869d0503eab1814c8769e2ccf7b2",
-      callbackURL: "http://localhost:3000/auth/42/callback",
+        "7ae666e15b65ab7d2cd7f95450360b8951824478b310c42b2389b2e20219b4f3",
+      callbackURL: "http://42cal.kro.kr:3000/auth/42/callback",
     },
     function (accessToken, refreshToken, profile, cb) {
       console.log(profile);
@@ -59,7 +59,7 @@ app.get(
   passport.authenticate("42", { failureRedirect: "/login" }),
   function (req, res) {
     // Successful authentication, redirect home.
-    res.redirect("http://localhost:3000/mypage/");
+    res.redirect("/mypage/");
   }
 );
 
