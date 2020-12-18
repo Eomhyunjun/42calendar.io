@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            outline: none;
+            word-break: break-word;
+            border: none;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            width: 100vw;
+            height: 100vh;
+            font-size: 12px;
+            line-height: 1.46666;
+            font-weight: 400;
+            overflow-x: hidden;
+            background: radial-gradient(ellipse at top, #502534 0%, #090a0f 100%) no-repeat;
+        }
+
+        h2 {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom : 0.8rem;
+        }
+
+        #app {
+            display: flex;
+            min-width: 100vw;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .loginbox {
+
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            width: fit-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: 0.5s ease-in-out 0s 1 normal none running animation-oia5fs;
+            color: rgb(255, 255, 255);
+            min-width: 300px;
+        }
+
+        .clicklogin {
+            background: rgb(9, 10, 15);
+            color: rgb(255, 255, 255);
+            padding: 0.5rem 3.5rem;
+            display: inline-flex;
+            position: relative;
+            cursor: pointer;
+            width: 100%;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="loginbox">
+            <h2>42calendar</h2>
+            <a href="http://42cal.kro.kr:3000/auth/42" class="clicklogin">로그인하기</a>
+
+        </div>
+    </div>
+</body></html>

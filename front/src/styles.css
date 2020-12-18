@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|ZCOOL+QingKe+HuangYou');
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(white, white);
+}
+
+* {
+	margin:0;
+	padding:0;
+	color:#000;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	box-sizing: border-box;
+}
+
+.fn-font {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.btn {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  zoom: 1.5;
+}
+
+button {
+  border-radius: 10px;
+  background-color: grey;
+  outline: none;
+}
+
+button:hover {
+  background-color: white;
+}
+
+.modal {
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  margin-top: 0px;
+  margin-left: -42px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal_content {
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 30%;
+  padding: 20px;
+  line-height: 120%;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+form {
+  width:100%;
+  height:430px;
+}
+
+input[type=text] {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid black;
+}
+
+textarea {
+  width: 100%;
+  height: 130px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type=submit] {
+  padding:5px 15px; 
+  background:#ccc; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; 
+}
+
+.close {
+  color: Black;
+  float: right;
+}
+
+.close:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+header {
+	width:97%;
+	height:60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header > h1{
+  width:70%;
+  padding:2em;
+  font-size: 45px;
+}
+
+header ul {
+	width:100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+
+li {
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+b { /* used for event dates/times */
+  margin-right: 3px;
+}
+
+.app {
+  display: flex;
+  min-height: 100%;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.app-sidebar {
+  width: 300px;
+  line-height: 1.5;
+  background: #eaf9ff;
+  border-right: 1px solid #d3e2e8;
+}
+
+.app-sidebar-section {
+  padding: 2em;
+}
+
+.app-main {
+  flex-grow: 1;
+  padding: 3em;
+  width: 70%;
+}
+
+.app-main_v {
+  flex-grow: 1;
+  padding: 3em;
+  width: 30%;
+}
+.fc { /* the calendar root */
+  max-width: 1100px;
+  margin: 0 auto;
+}
